@@ -37,3 +37,16 @@ Yêu cầu:
 - Up lên git hằng ngày
 
 
+Câu lệnh git
+dùng để setup lần đầu: 
+    git config --global user.name "John Doe"
+    git config --global user.email johndoe@example.com
+
+dùng để đẩy dữ liệu lên git
+    git add .
+    git commit -m "nội dung cập nhật"
+    git push
+
+lấy dữ liệu về máy
+ + lần đầu : git clone link_dự_án_git.git
+ + lấy dữ liệu update: git pull
