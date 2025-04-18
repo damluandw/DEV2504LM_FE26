@@ -1,0 +1,39 @@
+1. HTML(2b)
+    - HTML5
+    + Thuộc các thẻ
+    + Thuộc tính của các thẻ
+    + Bố cục HTML
+2. CSS(2-3b) - CSS3
+    + Cách sử dụng CSS
+    + Mức độ ưu tiên trong CSS
+    + Thuộc tính CSS
+    + Responsive
+3. Javascript(1b)
+    + Khai báo, gán, sử dụng biến, object, mảng, hàm,...
+    + Vòng lặp
+    + Cấu trúc rẽ nhánh
+    + hàm có sẵn
+4. DOM/Jquery(2-3b)
+    + cách sử dụng DOM/Jquery
+    + Tương tác với các thẻ HTML
+    + Tương tác/ xử lý các thuộc tính CSS
+5. Boostrap(1b)
+    + biết cách sử dụng
+    + Ghi đè CSS
+6. Photoshop(1b)
+    + Cut ảnh
+    + lấy màu
+    + đo kích thước
+    + kiểm tra font chữ
+7. Regular Exception/ Slick slider/ Font awsome (sử dụng)
+8. Ôn tập (1-2b)
+
+=> Project(2-4 tuần)
+- 3 màn hình: máy tính/ máy tính bảng/ mobile
+
+
+Yêu cầu:
+- Bài tập: up lên nộp trên classroom (nộp trước buổi học)
+- Up lên git hằng ngày
+
+
