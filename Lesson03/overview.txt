@@ -1,0 +1,23 @@
+- Phân loại thẻ
+    + phân loại theo cấu trúc
+        ++ thẻ đơn <tên_thẻ/>
+        ++ thẻ kép <tên_thẻ>nội dung</tên_thẻ>
+    + phân loại theo thuộc tính
+        ++ inline
+        ++ box
+
+- Một thẻ hay sử dụng
+    - table, thead, tbody, tfoot, th, tr, td --thuộc tính: border, colspan, rowspan, cellpadding, cellspacing
+    - form: method, encryptype, action
+        + input -- type: text, password, file, radio, checkbox, button, submit, hidden,
+                         thời gian (date, datetime-local,month,..), range, number, email,...
+                -- value: giá trị
+                -- placeholder : hiển thị giá trị khi chưa có giá trị value
+                -- max, min, checked
+        + select, option
+        + textarea
+    - h1 -> h6
+    - section, header, footer
+    - div, p, span, lable, a, img, nav
+    - ul li
+

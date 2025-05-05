@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Form</title>
+    </head>
+    <body>
+        <form action="" method="post" enctype="multipart/form-data"
+            id="formid">
+            <div>
+                <label for="username">UserName:</label>
+                <!-- type="text" -->
+                <input type="text" name="username" id="username"
+                    placeholder="Nhập email" value="devmaster">
+            </div>
+            <div>
+                <!-- type="password" -->
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password">
+            </div>
+            <input type="hidden" name="hidden" id="hidden">
+            <div>
+                <!-- type ="checkbox" -->
+                 <label for="caulong">Cầu lông</label>
+                 <input type="checkbox" name="hobby" id="caulong" checked><br>
+                 <label for="bongda">Bóng đá</label>
+                 <input type="checkbox" name="hobby" id="bongda"><br>
+                 <label for="bongchuyen">Bóng chuyền</label>
+                 <input type="checkbox" name="hobby" id="bongchuyen"><br>
+                 <label for="dacau">Đá cầu</label>
+                 <input type="checkbox" name="hobby" id="dacau"><br>
+                 <label for="boiloi">Bơi lội</label>
+                 <input type="checkbox" name="hobby" id="boiloi"><br>
+            </div>
+
+            <div>
+                <!-- type ="radio" -->
+                 <label for="nam">Nam</label>
+                 <input type="radio" name="gioitinh" id="nam" checked>
+                 <label for="nu">Nữ</label>
+                 <input type="radio" name="gioitinh" id="nu">
+            </div>
+            <div>
+                <!-- type = "file" -->
+                 <label for="avatar">Avatar</label>
+                 <input type="file" name="avatar" id="avatar">
+            </div>
+            <div>
+                <!-- type thời gian -->
+                 <input type="date" name="" id="">
+                 <input type="datetime-local" name="" id="">
+                 <input type="month" name="" id="">
+                 <input type="time" name="" id="">
+            </div>
+            <div>
+                <!-- type ="email" -->
+                 <label for="email">Email:</label>
+                 <input type="email" name="email" id="email">
+            </div>
+            <div>
+                <label for="age">Tuổi:</label>
+                <input type="number" name="age" id="age">
+            </div>
+            <div>
+               
+                <input type="range" name="" id="" value="25" min="0" max="1000">
+            </div>
+            <div>
+                <!-- select -->
+                 Chọn tỉnh:
+                  <select name="tinh" id="tinh">
+                    <option value="">---Vui lòng chọn tỉnh---</option>
+                    <option value="HN">Hà Nội</option>
+                    <option value="VP">Vĩnh Phúc</option>
+                    <option value="HP">Hải Phòng</option>
+                    <option value="HY">Hưng Yên</option>
+                  </select>
+            </div>
+
+            <input type="button" name="button" id="button" value="button">
+            <input type="submit" name="submit" id="submit" value="Sumbit">
+            <input type="reset" name="reset" id="reset">
+        </form>
+
+    </body>
+</html>

@@ -1,0 +1,112 @@
+* {
+    font-family: "Gotham-Medium";
+    padding: 0px;
+    margin: 0px;
+    font-size: 16px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1280px;
+    margin: auto;
+}
+.w-100{
+    width: 100%;
+}
+/* Begin Header */
+header>.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#header-menu,#icon-mobile {
+    display: flex;
+    align-self: center;
+}
+
+#header-menu ul {
+    display: flex;
+}
+
+#header-menu ul li,#header-menu-mobile li{
+    padding: 1rem;
+}
+
+#header-menu ul li a,#header-menu-mobile ul li a {
+    color: black;
+    text-transform: uppercase;
+    position: relative;
+}
+
+#header-menu a::after,#header-menu-mobile a::after {
+    content: "";
+    position: absolute;
+    width: 70%;
+    height: 5px;
+    background-color: rgb(214, 144, 13);
+    top: calc(100% + 2px);
+    left: 0;
+    display: none;
+}
+
+#header-menu ul li:hover a::after,#header-menu-mobile ul li:hover a::after {
+    display: block;
+}
+
+#header-menu-mobile,#icon-mobile {
+    display: none;
+}
+/* Begin Header mobile */
+@media (max-width: 575.98px) {
+    .container{
+        max-width: 450px;
+        margin: auto;
+    }
+    #header-logo{
+        width: 3rem;
+    }
+    #header-menu {
+        display: none;
+    }
+    #icon-mobile{
+        display: block;
+        /* margin-right: 1rem; */
+    }
+    #header-menu-mobile {
+        /* display: block; */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        /* transform: translateX(-50%); */
+        /* transform: translateY(-50%); */
+    }
+
+    #header-menu-mobile a::after{
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    #header-menu-mobile li{
+        text-align: center;
+    }
+
+    #icon-mobile:hover #header-menu-mobile{
+        display: block;
+    }
+}
+
+@media (max-width: 450px) {
+    .container{
+        max-width: 400px;
+        margin: auto;
+    }
+}
+/* End Header mobile */
+/* End Header */

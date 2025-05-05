@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cú pháp CSS</title>
+    <style>
+        /* thông qua tên thẻ HTML */
+        h2{
+            color: red;
+        }
+         /* thông qua tên Id của thẻ HTML */
+        #ten_id{
+            background-color: yellow !important;
+        }
+        /* #ten_id{
+            background-color: rgb(34, 0, 255);
+        } */
+         /* thông qua tên Class của thẻ HTML */
+        .bg-light{
+            background-color: lightgray !important;
+        }
+        /* thông qua tên thuộc tính của thẻ HTML */
+        [type="password"]{
+            border: 2px solid;
+        }
+    </style>
+</head>
+<body>
+    <!-- Mức độ ưu tiên trong CSS:
+        - thuộc tính nào viết sau sẽ được ưu tiên sử dụng (sử dụng trong cùng 1 cú pháp tương tác)
+        - !important -> tên id -> tên thuộc tính/tên class -> tên thẻ
+    -->
+
+    <h2 class="bg-light">Tương tác với tên thẻ HTML</h2>
+    <h2>Tương tác với tên thẻ HTML</h2>
+
+    <h2 id="ten_id" class="bg-light">Tương tác với tên id của thẻ html</h2>
+
+
+    <p class="bg-light">
+        Tương tác với tên class của thẻ html khối 1
+    </p>
+    <p class="bg-light">
+        Tương tác với tên class của thẻ html khối 2
+    </p>
+    <input type="text" name="" id="user" placeholder="nhập tên">
+    <input type="password" name="" id="passs">
+    <input type="password" name="" id="resetpass">
+</body>
+</html>

@@ -1,0 +1,63 @@
+Overview CSS
+
+1. Các cách sử dụng
+    - trong thẻ HTML: style= ""
+    - trong file HTML: <style></style>
+    - ngoài file HTML: <link src="link_file.css"/>
+2. Cách tương tác với thẻ HTML
+    - tương tác thông tên thẻ HTML  tên_thẻ { }
+    - tương tác thông qua tên class  .tên_class {}
+    - tương tác thông qua tên id     #tên_id{}
+    - tương thác thông qua thuộc tính  [tên_thuộc_tính = "giá_trị_thuộc_tính"]{}
+
+3. Mức độ ưu tiên trong CSS
+    - CSS viết sau thì sẽ đc ưu tiên sử dụng 
+    - !important -> id -> thuộc_tính/class -> tên_thẻ_HTML
+
+4. Các bộ chọn 
+    - tag01 tag02
+    - tag01>tag02
+    - tag01+tag02
+    - tag01~tag02
+    - tag01,tag02
+    - :hover
+    - :before/:after
+    - .....
+5. Lưu ý:
+    - bộ chọn CSS càng chi tiết/càng gần với thẻ thì thuộc tính CSS càng được ưu tiên sử dụng
+    VD1: <div>
+            <h2></h2>
+    </div>
+
+    div h2{
+        color: blue;
+    }
+
+    h2{
+        color: red;
+    }
+
+    VD2: 
+        <div>
+            <p>  <span></span> </p>
+        </div>
+
+    div span{
+        color: blue;
+    }
+    div p{
+        color: red;
+    }
+6. Đơn vị: %, px, rem, em
+7. Màu sắc: 3 Cách
+8. Các thuộc tính CSS
+    - margin/padding
+    - text
+    - font
+    - border
+    - height, width
+    - color
+    - background
+    - display
+    - position
+    - ...

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sử dụng JS</title>
+</head>
+<body>
+    <script>
+        // I. Khai báo biến
+        // systax: var/let tên_biến
+        //          constant TÊN_BIẾN
+
+        var username;
+        var userName;
+        var _username;
+        var user_name01;
+        // var 0username        
+        // var user-name
+        // var user name
+        username = "Devmater";
+        userName = 120;
+        _username = true;
+        user_name01 = 0.26;
+        document.write(username +"<br/>");
+        document.write(userName+"<br/>");
+        document.write(_username+"<br/>");
+        document.write(user_name01+"<br/>");
+
+        // II. Hàm alter,promt,confirm
+        //2.1 Hàm alter
+            alert("Hello world");
+        //2.2 Hàm promt
+            var name = prompt("Vui lòng nhập tên của bạn");
+            document.write(name+"<br/>");
+            console.log(name);
+        //2.3 Hàm confirm
+            var temp =  confirm("Bạn đủ 18 tuổi hay chưa");
+            document.write(temp+"<br/>");
+        // III. Toán tử số học
+        // IV. Toán tử so sánh
+            var number1 = 1;
+            var number2 = '1';
+            var number3 = 1;
+            var number4 = 4;
+            document.write("===================<br/>");
+            document.write("Phép so sánh<br/>");
+            document.write(number1 == number2 );
+            document.write("<br/>");
+            document.write(number1 === number2);
+            document.write("<br/>");
+            document.write(number1 == number3);
+            document.write("<br/>");
+            document.write(number1 === number3);
+            document.write("<br/>");
+            document.write(number1 == number4);
+            document.write("<br/>");
+            document.write(number1 === number4);
+            document.write("<br/>");
+        // V. Toán tử logic
+        // VI. Toán tử gán
+        // systax: tên_biến phép_toán= toán_tử
+        //         <=> tên_biến = tên_biến phép_toán toán_tử
+        number4 += 3;  // number4 = number4 + 3
+        document.write(number4+"<br/>");
+
+        // V. Câu lệnh rẽ nhánh
+        // 5.1. if else
+        // systax1: if(mệnh_đề_so_sánh){
+        //              khối_lệnh_thực_thi_nếu_mệnh_đề_so_sánh_đúng           
+        //          }else{
+        //              khối_lệnh_thực_thi_nếu_mệnh_đề_so_sánh_sai
+        //          }
+        // systax2: if(mệnh_đề_so_sánh){
+        //              khối_lệnh_thực_thi_nếu_mệnh_đề_so_sánh_đúng           
+        //          }
+        // systax3: if(mệnh_đề_so_sánh_1){
+        //              khối_lệnh_thực_thi_nếu_mệnh_đề_so_sánh_1_đúng
+        //          }else if(mệnh_đề_so_sánh_2){
+        //              khối_lệnh_thực_thi_nếu_mệnh_đề_so_sánh_2_sai
+        //          }
+        //          ...
+        //          else{
+        //             khối_lệnh_thực_thi_nếu_tất_cả_mệnh_đề_so_sánh_trên_đều_sai
+        //          }
+        // systax4: if(mệnh_đề_so_sánh_1){
+        //              khối_lệnh_thực_thi_nếu_mệnh_đề_so_sánh_1_đúng
+        //              if(mệnh_đề_so_sánh_2){
+        //              khối_lệnh_thực_thi_nếu_mệnh_đề_so_sánh_2_đúng           
+        //              }          
+        //          }
+        if(number1 === number2){
+            document.write(number1+ "=" +number2);
+        }else{
+            document.write(number1+" != "+number2);
+        }
+        // 5.2. switch case
+        //systax: switch(biến){
+        //              case giá_trị_so_sánh_1:
+        //                      khối_lệnh_thực_thi_1_nếu_biến_bằng_giá_trị_so_sánh_1;
+        //                      break; 
+        //              case giá_trị_so_sánh_2:
+        //                      khối_lệnh_thực_thi_2_nếu_biến_bằng_giá_trị_so_sánh_1;
+        //                      break;
+        //              ...
+        //              default:
+        //                      khối_lệnh_thực_thi_nếu_biến_không_bằng_tất_cả_các_giá_trị_bên_trên;
+        //                      break;
+        //          }
+        document.write("<br/>");
+        var thang =4
+        switch(thang){
+            case 1:
+            case 3:
+            case 5:
+            case 7:
+            case 8:
+            case 10:
+            case 12:
+                document.write("Tháng này có 31 ngày");
+                break;  
+            case 2:
+                document.write("Tháng này có 28 ngày"); 
+                break; 
+            case 4:
+            case 6:
+            case 9:
+            case 11:
+                document.write("Tháng này có 30 ngày");
+                break;  
+            default:
+                document.write("Vui lòng nhập lại tháng");
+                break;  
+        }
+        //VI. Vòng lặp
+        // 6.1. Vòng lặp for
+        // systax: for(giá_trị_khởi_tạo;mệnh_đề_điều_kiện;giá_trị_tăng/giảm){
+        //              Khối_lệnh_thực_thi
+        //          }
+        document.write("<br/>");
+        for(let i=0; i<100;i++){
+            document.write(i+",")
+        }
+        // 6.2. While
+        // systax:  while(mệnh_đề_điều_kiện){
+        //              Khối_lệnh_thực_thi
+        //          }
+        // 6.3. do while
+        // systax:  do{
+        //              Khối_lệnh_thực_thi
+        //          }while(mệnh_đề_điều_kiện)
+        // 6.4. foreach, for in
+
+        //VII. Mảng
+        // Khai báo mảng:
+        //systax: var  tên_mảng = [];
+        // Truy xuất phần tử:
+        // tên_mảng[ví_trí_phần_tử]
+        document.write("<br/>==========================<br/>");
+        document.write("Mảng<br/>");
+        var arr1 = []
+        var arr2 = [1,3,5,"Devmaster", true,9.1]
+        document.write("arr2[3]:"+ arr2[3]+"<br/>");
+        document.write("Chuỗi: <br/>");
+        for(let i=0; i< arr2.length; i++){        
+            document.write("arr2["+i+"]:"+ arr2[i]);
+            document.write("<br/>");
+        }
+        document.write("Chuỗi: <br/>");
+        var j=0;
+        while(j<arr2.length){
+            document.write("arr2["+j+"]:"+ arr2[j]);
+            document.write("<br/>");
+            j++;
+        }
+
+        document.write(arr2.valueOf());
+        arr2.push("Hello world")
+        document.write("<br/>");
+        document.write(arr2.valueOf());
+        arr2.pop()
+        document.write("<br/>");
+        document.write(arr2.valueOf());
+        arr2.shift()
+        document.write("<br/>");
+        document.write(arr2.valueOf());
+        arr2.unshift("Dev")
+        document.write("<br/>");
+        document.write(arr2.valueOf());
+        arr2.sort()
+        document.write("<br/>");
+        document.write(arr2.valueOf());
+        var arr3 = arr2.slice(3,6);
+        document.write("<br/>");
+        document.write(arr3.valueOf())
+
+        //VIII. Hàm
+        // systax: function tên_hàm(tham_số_1,tham_số_2,...){
+        //              mênh_đề_thực_thi 
+        ///        }
+
+        function tinhTong(a,b){
+            let tong = a+b;
+            return tong;
+        }
+        var tong = tinhTong(6,5)
+        document.write("<br/>");
+        document.write("tong:" + tong);
+
+    </script>
+</body>
+</html>
