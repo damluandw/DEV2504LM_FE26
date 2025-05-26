@@ -1,0 +1,18 @@
+1. Cách sử dụng - Giống JavaScript
+2. Tương tác với thẻ HTML - document....
+    + Thông qua tên thẻ HTML:  document.getElementsByTagName()
+    + Thông qua tên class của thẻ HTML:  document.getElementsByClassName()
+    + Thông qua tên id của thẻ HTML: document.getElementById()
+    + Thông qua cú pháp CSS Selector: document.querySelectorAll()
+3. Sự kiện
+    + onclick
+    + onblur
+    + ondbclick
+    + onchange...
+4. Xử lý CSS,HTML
+    - .CSS('thuộc_tính') = 'giá_trị'
+    - innerHTML, HTML,...
+5. DOM Listener
+    - document.addEventListener('tên_sự_kiện', function(){
+        khối_lệnh_xử_lý
+    })

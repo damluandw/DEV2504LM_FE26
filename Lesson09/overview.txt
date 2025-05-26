@@ -1,0 +1,26 @@
+Boostrap
+1. Bước sử dụng
+    - B1: Import file/link của Boostraps
+        + <link src ="..../boostrap.min.css">
+        + sử dụng link cdn
+    -  B2: Sử dụng các class có sẵn của boostrap - có thể tra trên trang 
+        Ex: https://getbootstrap.com/docs/5.3/getting-started/introduction/
+        + chú ý version boostrap khi sử dụng
+2. Cách sử dụng Boostrap
+    - viết class có sẵn của boostrap vào trong các thẻ HTML
+    - copy các đoạn code trên trang chủ của boostrap
+
+3. Lưu ý
+    - container
+    - row col
+    - Cách để dễ nhớ các class trong boostrap
+        + tên_thuộc_tính_css-loại_màn_hình-thuộc_tính
+        loại_màn_hình: xs/sm/md/lg/xl/xxl (có thể có hoặc không)
+    - padding/margin: p/m_ví_trí-loại_màn_hình-0/1/2/3/4/5
+    - background: bg-
+    - text: text-
+    - font: fs
+    - color: primary/danger/warning/light/susscess,...
+    - d-flex/justify-content-....
+=> Học các ghi đè CSS 
+

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Render sản phẩm</title>
+        <style>
+        .container{
+            max-width: 1200px;
+            margin: auto;
+        }
+        .w-100{
+            width: 100%;
+        }
+        #list-product .container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .box-product{
+            width: 25%;
+        }
+    </style>
+    </head>
+    <body>
+
+        <section id="list-product">
+            <div class="container">
+                <!-- <div class="box-product">
+                    <div class="img-product">
+                        <img class="w-100" src="imgs/sp1.jfif" alt="sp1">
+                    </div>
+                    <div class="content-product">
+                        <h3><a href="#">Sản phẩm 1</a></h3>
+                        <p>Giá: <span>500.000</span></p>
+                    </div>
+                </div>
+                <div class="box-product">
+                    <div class="img-product">
+                        <img class="w-100" src="imgs/sp1.jfif" alt="sp1">
+                    </div>
+                    <div class="content-product">
+                        <h3>Sản phẩm 1</h3>
+                        <p>Giá: <span>500.000</span></p>
+                    </div>
+                </div>
+                <div class="box-product">
+                    <div class="img-product">
+                        <img class="w-100" src="imgs/sp1.jfif" alt="sp1">
+                    </div>
+                    <div class="content-product">
+                        <h3>Sản phẩm 1</h3>
+                        <p>Giá: <span>500.000</span></p>
+                    </div>
+                </div>
+                <div class="box-product">
+                    <div class="img-product">
+                        <img class="w-100" src="imgs/sp1.jfif" alt="sp1">
+                    </div>
+                    <div class="content-product">
+                        <h3>Sản phẩm 1</h3>
+                        <p>Giá: <span>500.000</span></p>
+                    </div>
+                </div>
+                <div class="box-product">
+                    <div class="img-product">
+                        <img class="w-100" src="imgs/sp1.jfif" alt="sp1">
+                    </div>
+                    <div class="content-product">
+                        <h3>Sản phẩm 1</h3>
+                        <p>Giá: <span>500.000</span></p>
+                    </div>
+                </div>
+                <div class="box-product">
+                    <div class="img-product">
+                        <img class="w-100" src="imgs/sp1.jfif" alt="sp1">
+                    </div>
+                    <div class="content-product">
+                        <h3>Sản phẩm 1</h3>
+                        <p>Giá: <span>500.000</span></p>
+                    </div>
+                </div>
+                <div class="box-product">
+                    <div class="img-product">
+                        <img class="w-100" src="imgs/sp1.jfif" alt="sp1">
+                    </div>
+                    <div class="content-product">
+                        <h3>Sản phẩm 1</h3>
+                        <p>Giá: <span>500.000</span></p>
+                    </div>
+                </div>
+                <div class="box-product">
+                    <div class="img-product">
+                        <img class="w-100" src="imgs/sp1.jfif" alt="sp1">
+                    </div>
+                    <div class="content-product">
+                        <h3>Sản phẩm 1</h3>
+                        <p>Giá: <span>500.000</span></p>
+                    </div>
+                </div> -->
+            </div>
+        </section>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script>
+            var listProduct = [
+                {
+                    id: 'SP01',
+                    name: 'Sản phẩm 1',
+                    price: 52000,
+                    img: 'imgs/sp1.jfif'
+                },{
+                    id: 'SP02',
+                    name: 'Sản phẩm 2',
+                    price: 60000,
+                    img: 'imgs/sp2.jpg'
+                }
+                ,{
+                    id: 'SP03',
+                    name: 'Sản phẩm 3',
+                    price: 20000,
+                    img: 'imgs/sp3.webp'
+                }
+                ,{
+                    id: 'SP04',
+                    name: 'Sản phẩm 3',
+                    price: 45000,
+                    img: 'imgs/sp4.jpg'
+                }, {
+                    id: 'SP05',
+                    name: 'Sản phẩm 5',
+                    price: 55000,
+                    img: 'imgs/sp1.jfif'
+                },{
+                    id: 'SP06',
+                    name: 'Sản phẩm 6',
+                    price: 68000,
+                    img: 'imgs/sp2.jpg'
+                }
+                ,{
+                    id: 'SP07',
+                    name: 'Sản phẩm 7',
+                    price: 56000,
+                    img: 'imgs/sp3.webp'
+                }
+                ,{
+                    id: 'SP08',
+                    name: 'Sản phẩm 8',
+                    price: 223000,
+                    img: 'imgs/sp4.jpg'
+                }
+            ];
+
+            //render 1 sản phẩm
+            function renderProduct(product){
+                var render = `<div class="box-product">
+                    <div class="img-product">
+                        <img class="w-100" src="${product.img}" alt="sp1">
+                    </div>
+                    <div class="content-product">
+                        <h3>${product.name}</h3>
+                        <p>Giá: <span>${product.price}</span></p>
+                    </div>
+                </div>`
+                return render;
+            }
+
+            // render list sản phẩm
+            // function renderListProduct(list){
+            //     let render=``;
+            //     console.log(render);
+            //     for(let i=0 ; i<list.length;  i++){
+            //         render = render +renderProduct(list[i]);
+            //     }            
+            //     $("#list-product>.container").html(render)
+            // }
+            function renderListProduct(list){
+                for(let i=0 ; i<list.length;  i++){
+                    $("#list-product>.container").append(renderProduct(list[i]))
+                }  
+            }
+            //sử dùng hàm
+            renderListProduct(listProduct)
+
+        </script>
+    </body>
+</html>

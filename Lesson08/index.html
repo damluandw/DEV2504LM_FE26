@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
+            crossorigin="anonymous">
+        <style>
+                /* h2{
+                    color: red;
+                } */
+
+                .box{
+                    width: 200px;
+                    height: 200px;
+                }
+            </style>
+    </head>
+    <body>
+        <!-- Cách 1: Copy các thẻ có sẵn trong trang doc của bootstrap -->
+
+        <!-- Cách 2: Sử dụng các tên class có sẵn của Boostrap -->
+        <h2 class="text-danger">Devmaster</h2>
+
+        <!-- 
+            1. Một số quy tắc giúp dễ nhớ và 1 số class thường dùng
+            - display:   d-thuộc_tính (tên class)
+            - text:      text-thuộc_tính 
+            - color:     cl-tên_màu()
+            - background-color: bg-thuộc_tính
+            - margin/padding: 
+            tên_màu:  primary, danger, warning, light
+
+
+            ==> tên_thẻ_CSS-kích_thước-thuộc_tính_css
+            kích_thước: xs,sm,md,lg,xl,xxl có thể có hoặc không (hỗ trợ responsive)
+         -->    
+
+        <section class="d-flex">
+            <div class="box border bg-primary"></div>
+            <div class="box border bg-danger"></div>
+        </section>
+
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+            data-bs-target="#devmaster">
+            Click me
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="devmaster" tabindex="-1"
+            aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Thực
+                            hành với modal boostrap</h1>
+                        <button type="button" class="btn-close"
+                            data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Nội dung....
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary"
+                            data-bs-dismiss="modal">Đóng</button>
+                        <button type="button"
+                            class="btn btn-primary">Lưu</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+            crossorigin="anonymous"></script>
+
+    </body>
+</html>

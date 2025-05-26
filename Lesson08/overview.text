@@ -1,0 +1,58 @@
+1. JavaScript
+    - Ngôn ngữ lập trình kịch bản
+    - học như 1 ngôn ngữ lập trình
+1.1. Khai báo - sử dụng biến/mảng/ object/ hàm,..
+1.2. Cấu trúc điều khiển - rẽ nhánh
+    1.2.1. if else (phải biết)
+    1.2.2. switch case (nên biết)
+1.3. Vòng lặp
+    1.3.1. for(mênh_đề_1;mênh_đề_2 ;mênh_đề_3){ nội_dung_được_lặp_lại } (phải biết)
+    1.3.2. while(mênh_đề_điều_kiện) {nội_dung_được_lặp_lại}
+    1.3.3. do { nội_dung_được_lặp_lại } while(mênh_đề_điều_kiện)
+    1.3.4. foreach/for in,... (nên biết)
+1.4. hàm xử lý mảng/chuỗi/object...
+
+2. DOM/Jquery
+2.1. Cách tương tác với thẻ HTML(phải biết)
+    + DOM 
+        - thông qua id: document.getElementById("tên_id")
+        - thông qua class: document.getElementByClassName("tên_class")
+        - thông tên thẻ HTML: document.getElementByTagName("tên_thẻ_HTML")
+        - thông cú pháp CSS Selector: document.querySelectorAll("Cú_pháp_CSS_Selector")
+    + Jquery
+        - thông qua id: $("#tên_id")
+        - thông qua class: $(".tên_class")
+        - thông tên thẻ HTML:  $("tên_thẻ_HTML")
+
+2.2. Cách bắt sự kiện (phải biết)
+- từ khóa sự kiện: click, dbclick, blur, change, onclick, ondbclick, onblur, onchange,....
+- sử dụng bắt đầu bằng từ kháo on khi sự kiện chúng ta để trên thẻ HTML
+    vd: <button onclick="alert('Devmaster')" >click me</button>
+- sử dụng các từ không bắt đầu bằng từ on khi bắt sự kiện trong thẻ <script></script>
+    vd: DOM
+        <script>
+            document.getElementById("tên_id").addEventListener('click', function(){
+                nội_dung
+            })            
+        </script>
+    Jquery
+        <script>
+            $("css selector").on('click', function(){
+                nội_dung
+            })
+        </script>
+2.3. Cách để thay đổi CSS/HTML(phải biết)
+
+    DOM
+        document.getElementById("tên_id").style.thuộc_tính = "giá_trị"
+        document.getElementById("tên_id").innerHTML = ""
+    Jquery
+         $("css selector").css("tên_thuộc_tính") - get/lấy giá trị
+         $("css selector").css("tên_thuộc_tính","giá_trị") - set/gán giá trị
+
+         $("css selector").html()
+         $("css selector").append()
+2.4. Di chuyển giữa các thẻ HTML (nên biết)
+    Jquery: parent(), children("css selector"), sibling("css selector")
+
+

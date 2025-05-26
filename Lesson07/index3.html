@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Input</title>
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+            integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+        .error{
+            display: none;
+            color: red;
+        }
+    </style>
+    </head>
+    <body>
+        <form action id="frm">
+            <div class="form-control">
+                <label for="username">Username:</label>
+                <input type="text" name="username" id="username"
+                    placeholder="devmaster@gmail.com" >
+                <p class="error err-1">Email không được để trống</p>
+                <p class="error err-2">Email không đúng định dạng! Vui kiểm tra
+                    lại</p>
+            </div>
+            <div class="form-control">
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password"
+                    placeholder="**********">
+                <span><i class="fa-regular fa-eye"></i></span>
+                <p class="error err-1">Password không được để trống</p>
+                <p class="error err-2">Password phải ít nhất 8 ký tự</p>
+
+            </div>
+
+            <div>
+                <button>Đăng nhập</button>
+            </div>
+        </form>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+            integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script>
+        var regxEmail = /^\S+@\S+\.\S+$/;
+        var regxPass = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/
+        $('#frm :input').on('blur', function(){
+            //  console.log(frm.username.value)
+             console.log($(this).val())
+             if($(this).val() == null || $(this).val() == ''){
+                // $('.error.err-1').show()
+                $(this).siblings('.err-1').show()
+             }else{
+                // $('.error.err-1').hide()
+                $(this).siblings('.err-1').hide()
+             }
+             if($(this).attr("name") == "username"){
+                if(regxEmail.test($(this).val())){
+                    $(this).siblings('.err-2').hide()
+                }else{
+                    $(this).siblings('.err-2').show()
+                }
+             }else{
+                if(regxPass.test($(this).val())){
+                    $(this).siblings('.err-2').hide()
+                }else{
+                    $(this).siblings('.err-2').show()
+                }
+             }
+        })
+
+        $('.fa-regular.fa-eye').on('click',function(){
+           var temp = $(this).parent('span').siblings('input').attr('type')
+           console.log(temp)
+           if(temp == "password"){
+                $(this).parent('span').siblings('input').attr('type',"text");
+           }else{
+                $(this).parent('span').siblings('input').attr('type',"password");
+           }
+        })
+        
+    </script>
+    </body>
+</html>

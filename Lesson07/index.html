@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 onclick="ham()">Hàm1</h2>
+    <h2 id="ten_id" >Hàm2</h2>
+    <h3 class="class_name">class 1</h3>
+    <h3 class="class_name">class 2</h3>
+    <h3 class="class_name">class 3</h3>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+   <script>
+        // document.getElementById('ten_id').addEventListener('click', function(){
+        //     //khối lệnh
+        //     this.style.display = 'none';
+        // })
+        // document.getElementsByClassName('class_name')[0].addEventListener('click', function(){
+        //     //khối lệnh
+        //     this.style.display = 'none';
+        // })
+
+        // function ham(){
+        //     // document.get
+        // }
+
+        $('#ten_id').on('click',function(){
+            $(this).hide();
+        })
+
+        $('.class_name').on('click',function(){
+
+            $(this).hide();
+        })
+
+        $("h2").on('click', function(){
+
+            $(".class_name").show();
+        })
+
+    </script>
+</body>
+</html>
