@@ -1,0 +1,88 @@
+#banner{
+    background-image: url(../imgs/index/bannner.jpg);
+    height: 56.5625rem;
+    margin-top: calc(8.75rem - 5.3125rem);
+}
+
+#banner .container,
+#menu .container{
+    position: relative;
+}
+
+#banner .container>div{
+    position: absolute;
+    left: 3.375rem;
+    top: calc(7.5rem + 5.3125rem);
+}
+
+#banner h2,#banner h2>span{
+    font-family: 'Gotham-Ultra';
+    font-size: 2.875rem;
+    text-transform: uppercase;
+}
+
+#banner p{
+    max-width: 34.75rem;
+    text-align: justify;
+    margin: 1.75rem 0 1.5rem;
+}
+ 
+#banner button{
+    border: none;
+    padding: 1.5rem 2rem;
+    background-color: #bd945f;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Gotham-Ultra';
+    font-size: 1.25rem;
+}
+#menu {
+    height: 32.5rem;
+    background-color: #f3f3f3;
+}
+#menu p{
+   text-align: center;
+}
+#menu p>a{ 
+    color: #2c2e53;
+    font-family: 'Gotham-Ultra';
+}
+#menu .container>div{
+    position: absolute;
+    top: -3.75rem;
+    left: 0;
+    background-color: #fff;
+    z-index: 1;
+}
+
+#menu .box-menu{
+    padding-top: 2.5rem;
+    padding-bottom: 3.25rem;
+}
+
+#list-product{
+    position: relative;
+}
+
+#list-product .slick-arrow{
+    width: 2.875rem;
+    height: 2.875rem;
+    border-radius: 50%;
+    border: none;
+    background-color: #bd945f;
+    color: #fff;
+    position: absolute;
+    top: 30%;
+    z-index: 1;
+}
+
+
+#list-product .slick-arrow.slick-prev{
+    left: -1.4rem;
+}
+
+#list-product .slick-arrow.slick-next{
+    left: calc(100% - 1.4rem)
+}
+
+
